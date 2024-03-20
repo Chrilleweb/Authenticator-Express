@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title><%= pageTitle %></title>
+  </head>
+  <body>
+    <header>
+      <div id="loader-bar" class="loader-bar"></div>
+      <nav
+        class="flex flex-col lg:flex-row justify-between items-center py-4 2xl:px-8 border-b-2 border-stone-200 bg-gray-700 font-extralight"
+      >
+        <div class="flex items-center ml-2">
+          <a href="/">
+            <h1 class="text-2xl">Authenticator With Express</h1>
+          </a>
+        </div>
+        <div class="nav-links flex items-center mr-2 bg-gray-700">
+          <a
+            href="/login"
+            class="p-2 hover:text-gray-500 transition duration-200"
+            >Login</a
+          >
+          <a
+            href="/register"
+            class="p-2 hover:text-gray-500 transition duration-300"
+            >Register</a
+          >
+        </div>
+        <button class="burger-menu">&#9776;</button>
+      </nav>
+    </header>
+    <main></main>
+  </body>
+</html>

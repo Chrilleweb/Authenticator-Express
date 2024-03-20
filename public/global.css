@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-light;
+    @apply bg-gray-800;
+    @apply text-codeText;
+  }
+  
+  .loader-bar {
+    @apply fixed top-0 left-0 h-1 bg-blue-500;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .burger-menu {
+    display: none;
+  }
+  
+  @media (max-width: 900px) {
+    .burger-menu {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+  }
+  
